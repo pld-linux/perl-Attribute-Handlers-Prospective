@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Attribute
-%define		pnam	Handlers-Prospective
+%define	pdir	Attribute
+%define	pnam	Handlers-Prospective
 Summary:	Attribute::Handlers::Prospective - enhanced definition of attribute handlers
 Summary(pl):	Attribute::Handlers::Prospective - rozszerzona definicja obs³ugi atrybutów
 Name:		perl-Attribute-Handlers-Prospective
