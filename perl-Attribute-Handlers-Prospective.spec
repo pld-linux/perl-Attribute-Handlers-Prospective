@@ -9,7 +9,7 @@ Summary:	Attribute::Handlers::Prospective - Enhanced definition of attribute han
 Summary(pl):	Attribute::Handlers::Prospective - rozszerzona definicja obs³ugi atrybutów
 Name:		perl-Attribute-Handlers-Prospective
 Version:	0.01
-Release:	3
+Release:	4
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -18,7 +18,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Filter-Simple
 BuildRequires:	perl-Parse-RecDescent
 %endif
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -42,7 +42,8 @@ na koñcu fazy kompilacji (czyli w bloku INIT).
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -61,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
-%dir %{perl_sitelib}/Attribute/Handlers
-%{perl_sitelib}/Attribute/Handlers/*.pm
+%dir %{perl_vendorlib}/Attribute/Handlers
+%{perl_vendorlib}/Attribute/Handlers/*.pm
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
