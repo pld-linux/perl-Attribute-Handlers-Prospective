@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Attribute
 %define		pnam	Handlers-Prospective
-Summary:	Attribute::Handlers::Prospective - Enhanced definition of attribute handlers
+Summary:	Attribute::Handlers::Prospective - enhanced definition of attribute handlers
 Summary(pl):	Attribute::Handlers::Prospective - rozszerzona definicja obs³ugi atrybutów
 Name:		perl-Attribute-Handlers-Prospective
 Version:	0.01
