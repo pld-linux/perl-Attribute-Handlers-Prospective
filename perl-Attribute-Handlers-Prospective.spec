@@ -10,7 +10,8 @@ Summary(pl):	Attribute::Handlers::Prospective - rozszerzona definicja obs³ugi at
 Name:		perl-Attribute-Handlers-Prospective
 Version:	0.01
 Release:	4
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d20442ca3d7f83aacbdb15f225fdf287
