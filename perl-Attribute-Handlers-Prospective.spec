@@ -3,13 +3,13 @@
 # _without_tests - do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Attribute
-%define	pnam	Handlers-Prospective
+%define		pdir	Attribute
+%define		pnam	Handlers-Prospective
 Summary:	Attribute::Handlers::Prospective - Enhanced definition of attribute handlers
 Summary(pl):	Attribute::Handlers::Prospective - rozszerzona definicja obs³ugi atrybutów
 Name:		perl-Attribute-Handlers-Prospective
 Version:	0.01
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -61,6 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
+%dir %{perl_sitelib}/Attribute/Handlers
 %{perl_sitelib}/Attribute/Handlers/*.pm
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
