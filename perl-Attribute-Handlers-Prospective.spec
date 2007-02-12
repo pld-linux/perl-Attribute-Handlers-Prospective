@@ -6,7 +6,7 @@
 %define		pdir	Attribute
 %define		pnam	Handlers-Prospective
 Summary:	Attribute::Handlers::Prospective - enhanced definition of attribute handlers
-Summary(pl):	Attribute::Handlers::Prospective - rozszerzona definicja obs³ugi atrybutów
+Summary(pl.UTF-8):   Attribute::Handlers::Prospective - rozszerzona definicja obsÅ‚ugi atrybutÃ³w
 Name:		perl-Attribute-Handlers-Prospective
 Version:	0.01
 Release:	5
@@ -32,13 +32,13 @@ packages derived from that package may be given attributes with the
 same names as the attribute handler subroutines, which will then be
 called at the end of the compilation phase (i.e. in an INIT block).
 
-%description -l pl
-Ten modu³, w przypadku dziedziczenia po nim w pakiecie, pozwala klasie
-pakietu definiowaæ funkcje obs³ugi atrybutów dla danych atrybutów.
+%description -l pl.UTF-8
+Ten moduÅ‚, w przypadku dziedziczenia po nim w pakiecie, pozwala klasie
+pakietu definiowaÄ‡ funkcje obsÅ‚ugi atrybutÃ³w dla danych atrybutÃ³w.
 Zmienne i funkcje zdefiniowane w tym pakiecie lub pakietach
-wywodz±cych siê z niego mog± mieæ podane atrybuty o tych samych
-nazwach co funkcje obs³uguj±ce atrybuty, które bêd± wtedy wywo³ywane
-na koñcu fazy kompilacji (czyli w bloku INIT).
+wywodzÄ…cych siÄ™ z niego mogÄ… mieÄ‡ podane atrybuty o tych samych
+nazwach co funkcje obsÅ‚ugujÄ…ce atrybuty, ktÃ³re bÄ™dÄ… wtedy wywoÅ‚ywane
+na koÅ„cu fazy kompilacji (czyli w bloku INIT).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
