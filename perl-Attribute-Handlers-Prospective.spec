@@ -6,7 +6,7 @@
 %define		pdir	Attribute
 %define		pnam	Handlers-Prospective
 Summary:	Attribute::Handlers::Prospective - enhanced definition of attribute handlers
-Summary(pl.UTF-8):   Attribute::Handlers::Prospective - rozszerzona definicja obsługi atrybutów
+Summary(pl.UTF-8):	Attribute::Handlers::Prospective - rozszerzona definicja obsługi atrybutów
 Name:		perl-Attribute-Handlers-Prospective
 Version:	0.01
 Release:	5
