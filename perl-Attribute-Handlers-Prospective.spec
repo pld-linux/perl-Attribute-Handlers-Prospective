@@ -9,7 +9,7 @@ Summary:	Attribute::Handlers::Prospective - enhanced definition of attribute han
 Summary(pl.UTF-8):	Attribute::Handlers::Prospective - rozszerzona definicja obsługi atrybutów
 Name:		perl-Attribute-Handlers-Prospective
 Version:	0.01
-Release:	5
+Release:	6
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
