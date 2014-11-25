@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Attribute
 %define		pnam	Handlers-Prospective
+%include	/usr/lib/rpm/macros.perl
 Summary:	Attribute::Handlers::Prospective - enhanced definition of attribute handlers
 Summary(pl.UTF-8):	Attribute::Handlers::Prospective - rozszerzona definicja obsługi atrybutów
 Name:		perl-Attribute-Handlers-Prospective
@@ -15,12 +15,13 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d20442ca3d7f83aacbdb15f225fdf287
+URL:		http://search.cpan.org/dist/Attribute-Handlers-Prospective/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Filter-Simple
 BuildRequires:	perl-Parse-RecDescent
 %endif
-BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
